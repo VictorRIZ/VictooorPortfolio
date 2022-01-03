@@ -20,6 +20,7 @@ const header = document.getElementById('header');
   /*Ou seja, assim que abrir o menu, vai ler a mensagem de fechar menu*/ 
   event.currentTarget.setAttribute('area-label', 'Abrir Menu');
 }
-
+function funcaoalert()
+{
 alert("Para uma melhor resolução do porfolio, utilize em 80% de resolução.")
-
+}
