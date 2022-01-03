@@ -21,3 +21,5 @@ const header = document.getElementById('header');
   event.currentTarget.setAttribute('area-label', 'Abrir Menu');
 }
 
+alert("Para uma melhor resolução do porfolio, utilize em 80% de resolução.")
+
