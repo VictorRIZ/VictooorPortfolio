@@ -21,5 +21,5 @@ const header = document.getElementById('header');
   event.currentTarget.setAttribute('area-label', 'Abrir Menu');
 }
 
-alert("Para uma melhor resolução do portfolio, utilize em 80% de resolução.");
+alert("For a better experience, use 80% to resolution. / Para uma melhor experiência, utilize a resolução em 80%.");
 
