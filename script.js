@@ -8,11 +8,11 @@ function toggleMenu(event){ //Função que vai executar a ação do toggle
  se o evento for "touch", colocamos para que não ative nada além
  do padrão(preventDefault), que nesse caso seria o "touch" */ 
 
-const header = document.getElementById('header'); 
-//Div de navegação(about)
-  header.classList.toggle('active'); /*(Adicione caso tenha, remova caso nn tenha)
+const abouts = document.getElementById('abouts'); 
+//Div de navegação(abouts)
+  abouts.classList.toggle('active'); /*(Adicione caso tenha, remova caso nn tenha)
   Essa é a fuunção do toggle nesse caso*/
-  const active = header.classList.contains('active'); /*Ou seja,
+  const active = abouts.classList.contains('active'); /*Ou seja,
   caso for active é true, caso contrário, é false.*/ 
   event.currentTarget.setAttribute('aria-expanded', active);
   if (active) 
@@ -20,6 +20,7 @@ const header = document.getElementById('header');
   /*Ou seja, assim que abrir o menu, vai ler a mensagem de fechar menu*/ 
   event.currentTarget.setAttribute('area-label', 'Abrir Menu');
 }
+
 
 alert("For a better experience, use 80% to resolution. / Para uma melhor experiência, utilize a resolução em 80%.");
 

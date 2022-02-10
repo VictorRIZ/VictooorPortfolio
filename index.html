@@ -10,18 +10,30 @@
     <title>Victøør - Front-end</title>
 </head>
 <body>
-    <header id="header">
-        <a id="logoPortfolio">VICTØØØR</a>
-        <button aria-label="Abrir menu" id="btn-hamburguer" aria-haspopup="true" 
-      aria-controls="content-menu"
-      aria-expanded="false"> Menu
-        <span id="hamburguer"></span>
-      </button>
+    <header>
+        <a id="logoPortfolio">VICTØØØR</a>   
+        
         <div class="sobre"><a href="#About">Sobre Mim</a></div>
         <div class="sobre"><a href="#Projects">Projetos</a></div>
         <div class="sobre"><a href="#Tasks">Tasks/Learning</a></div>
         <div class="sobre"><a href="#Contact">Contato</a></div>
+        
+            <div id="abouts">
+
+            <button aria-label="Abrir menu" id="btn-hamburguer" aria-haspopup="true" 
+            aria-controls="content-menu"
+            aria-expanded="false"> Menu
+            <span id="hamburguer"></span>
+        </button>
+        <ul class="content-menu" role="menu"> <!--Função dessa ul-->      
+            <li> <a href="#"> Eletrodomésticos</a></li>
+            <li> <a href="#"> Outros </a> </li>
+            <li> <a href="#"> Suporte </a> </li>
+            
+          </ul>
+        </div>
     </header>
+
    <main id="About">
        <div class="text">
         <h2>
@@ -35,9 +47,9 @@
     </div>
    </main>
 
-   <a id="curriculo" href="curr_culoTI2022(Atualizadoo).docx" download title="Baixe meu currículo!">
+   <a id="curriculo" href="curri_culo_Victor2022.pdf" download title="Baixe meu currículo!">
 
-    <i class="far fa-file-word"></i>
+    <i class="fas fa-file-pdf"></i>
 
    </a>
    <div class="doing">

@@ -66,35 +66,22 @@ header .sobre:hover a::before{
     transform: skewX(45deg) translateX(200%);
 }
 
-#header #btn-hamburguer{
+#abouts #btn-hamburguer{
+    display: none;
+}
+
+#abouts ul{
     display: none;
 }
 
 /*Menu hamburguer*/
 @media(max-width: 1100px){
-#header.active .sobre{
-    left: 0;
-    height: calc(102vh - 1rem);
-    overflow-y: auto;
-    visibility: visible;
-    
-}
-#header .sobre{
-    position: fixed; 
-    top: 0; 
-    left: -100%; 
-    display: block;  
-    width: 33%;
-    height: 0rem;
-    background: black;
-    transition: .8s;
-    z-index:1000; 
-    visibility: hidden;
-    overflow-y: hidden;
 
+#abouts .content-menu ul li{
+    display: none;
 }
 
-#header #btn-hamburguer{
+#abouts #btn-hamburguer{
     display: flex;
     padding: 1.5rem 1rem;
     font-size: 1.8rem;
@@ -113,6 +100,45 @@ header .sobre:hover a::before{
 
 }
 
+#abouts.active .content-menu{
+    left: 0;
+    height: calc(200vh - 1rem);
+    overflow-y: auto;
+    visibility: visible;
+    
+}
+#abouts .content-menu{
+    position: fixed; 
+    top: 0; 
+    left: -100%; 
+    display: block;  
+    width: 33%;
+    height: 0rem;
+    background: var(--redLG1);
+    transition: .8s;
+    z-index:1000; 
+    visibility: hidden;
+    overflow-y: hidden;
+
+}
+
+#abouts .content-menu a{
+    border-bottom: 2px solid rgb(251, 106, 106);
+    cursor: pointer;
+}
+
+#abouts .content-menu ul li{
+    display: none;
+}
+
+header .content-menu li a{color: #ffffff; 
+    font-size: 2rem; 
+    margin: 1rem;
+     }
+
+header .content-menu li a:hover{color: black;
+     }
+
 #hamburguer::after, #hamburguer::before{
     content: '';
     display: block; /*Teria que criar um display e content para
@@ -127,24 +153,24 @@ header .sobre:hover a::before{
     position: relative;
 }
 
-#header.active #btn-hamburguer{
+#abouts.active #btn-hamburguer{
     color: whitesmoke;
     transition: .2s;
 }
 
-#header.active #hamburguer{
+#abouts.active #hamburguer{
     color: whitesmoke;
     transition: .2s;
     border-top-color: transparent;/*Aqui, o 1º traço ficará transpa-
     rente após o usuário clicar no menu hamburguer*/
 }
 
-#header.active #hamburguer::before{
+#abouts.active #hamburguer::before{
 transform: rotate(135deg); /*Se refere a quantos º de rotação
 sofrerá*/
 }
 
-#header.active #hamburguer::after{
+#abouts.active #hamburguer::after{
     transform: rotate(-135deg);
     top: -1rem; /*Só funciona com objetos em posicionamento 
     relativo, fixo ou absoluto*/
