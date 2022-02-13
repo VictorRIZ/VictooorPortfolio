@@ -177,8 +177,13 @@ footer i{
     font-size:3rem;
 }
 footer .fa-linkedin{
-    color: rgb(0, 81, 255);
+    color: rgb(0, 81, 255);   
 }
+
+footer .fa-envelope{
+    color: rgb(255, 123, 0);
+}
+
 .title-off{
     background: black;
     color: var(---blueIcon);
