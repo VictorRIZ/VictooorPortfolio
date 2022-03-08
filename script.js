@@ -30,5 +30,13 @@ btnHamburguer.addEventListener('touchstart', toggleMenu);
 /*Se não corrigir, ele vai aplicar o efeito de "click" duas vezes, 
 ou seja, abre e fecha, impossibilitando assim de abrir o menu*/ 
 
+
+function toggleMenu(){
+  var aboutsToggle = document.getElementById('abouts');
+  var contentMenu = document.querySelector('.content-menu');
+  aboutsToggle.classList.toggle('active');
+  contentMenu.classList.toggle('active');
+}
+
 alert("For a better experience, use 80% to resolution. / Para uma melhor experiência, utilize a resolução em 80%.");
 
