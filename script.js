@@ -22,5 +22,13 @@ const abouts = document.getElementById('abouts');
 }
 
 
+btnHamburguer.addEventListener('click', toggleMenu);
+//Ele vai observar o evento, no caso o evento de click
+// Código destinado para o menu hamburguer
+
+btnHamburguer.addEventListener('touchstart', toggleMenu);
+/*Se não corrigir, ele vai aplicar o efeito de "click" duas vezes, 
+ou seja, abre e fecha, impossibilitando assim de abrir o menu*/ 
+
 alert("For a better experience, use 80% to resolution. / Para uma melhor experiência, utilize a resolução em 80%.");
 
