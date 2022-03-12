@@ -149,7 +149,7 @@ o mouse por cima dos botoes. */
     que detecte o objeto, no caso o menu hamburguer. Caso nn
     fizesse isso, ficaria vazio*/
     width: 3rem;
-    height: .1rem;
+    height: .15rem;
     background: white;/*Uma variável que muda a cor conforme
     escrita no hamburguer*/
     margin-top: .8rem;
@@ -170,12 +170,12 @@ o mouse por cima dos botoes. */
 }
 
 #abouts.active #hamburguer::before{
-transform: rotate(130deg); /*Se refere a quantos º de rotação
+transform: rotate(132deg); /*Se refere a quantos º de rotação
 sofrerá*/
 }
 
 #abouts.active #hamburguer::after{
-    transform: rotate(-125deg);
+    transform: rotate(-132deg);
     top: -1rem; /*Só funciona com objetos em posicionamento 
     relativo, fixo ou absoluto*/
     
