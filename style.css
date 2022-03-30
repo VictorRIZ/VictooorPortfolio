@@ -29,9 +29,13 @@ main .text{
     z-index: 2;
 }
 main .imagemvazia{
-    padding: 15rem;
+    padding: 1rem;
+    padding-top: 6rem;
 }
 
+main .imagemvazia img{
+    width: 60%;
+}
 /*Botão currículo*/
 
 #curriculo{
@@ -263,8 +267,12 @@ main .text{
 
 main .imagemvazia{
     position: relative;
-    padding: 2rem;
-    left: 15%;
+    padding: 0;
+    left: 10%;
+}
+
+main .imagemvazia img{
+    width: 50%;
 }
 
 .projetos .img-projetos img{
