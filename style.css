@@ -96,10 +96,6 @@ main .imagemvazia img{
     transition: .5s;
 }
 
-.projetos .img-projetos .em-breve{
-    filter: blur(0.3rem);
-}
-
 .projetos .img-projetos a{
     position: absolute;
     padding: 1.3rem;
@@ -114,13 +110,6 @@ main .imagemvazia img{
     color: transparent;
     transition: .6s;
     z-index: 1;
-}
-
-.projetos .img-projetos .em-breve-text{
-    background: var(---blueIcon);
-    color: black;
-    left: 39%;
-    top: 27%;
 }
 
 .projetos .img-projetos img:hover{
