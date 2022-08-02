@@ -5,48 +5,270 @@
     box-sizing: border-box;
 }
 html{
+    ---blueIcon: #c0c0ff;
+    ---blueWords: #001c69;
+    ---grayImg: #9c9c9c;
+    ---colorBody: #121212;
+    ---colorLyrics: #e8e8e8;
     font-size: 62.5%;
     scroll-behavior: smooth;
+    color: var(---colorLyrics);
 }
+
 body{
-    background: whitesmoke;
+    background: var(---colorBody);
 }
 
-.container{
-    width: 100vw;
-    height: 100vh;
+header{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    background: black;
+    width: 100vw;
+    height: 15vh;
+    color: white;
 }
 
+header .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+}
 
-.center{
+.logo .name-logo{
+    color: var(---blueIcon);
+    text-transform: uppercase;
+    font-size: 4rem;
+    text-decoration: none;
+}
+
+header .menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    background: green;
+    width: 100vw;
+    height: 5vh;
+}
+
+.menu li{
+    font-size: 1.8rem;
+}
+
+#apresentacao{
+    height: 90%;
+    width: 100%/*
+    background-image: url(images/apresentacao.png);
+    background-repeat: no-repeat;
+    background-position: center;*/
+}
+
+#apresentacao .imagem-apresentacao{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.imagem-apresentacao img{
+    width: 100%;
+    height: 100%;
+    filter: blur(3px);
+}
+
+#apresentacao .texto-apresentacao{
+    position: absolute;
+    left: 37%; 
+    margin-left: -12rem; 
+    top: 50%; 
+    margin-top: -7.5rem;
+    width:50%; 
+    height: 50%;
+}
+
+#apresentacao .texto-apresentacao h2{
     font-size: 5rem;
     color: black;
 }
 
-h2{
+#apresentacao .texto-apresentacao p{
+    font-size: 3rem;
+    color: black;
+}
+
+#apresentacao .texto-apresentacao a{
+    margin-left: 21rem;
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: var(---blueIcon);
+    border: 2px solid var(---blueIcon);
+    border-radius: 2rem;
+    transition: .5s;
+}
+
+#apresentacao .texto-apresentacao a:hover{
+    color: black;
+    background: var(---blueIcon);
+    transition: .5s;
+}
+
+#about-me{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+#about-me .texto-sobre{
+    width: 60%;
+}
+
+.texto-sobre p{
+    font-size: 2.5rem;
+}
+
+.imagem-sobre img{
+    width: 20vw;
+}
+
+#projetos{
+    display: grid;
+    place-items: center;
+    margin-top: 5rem;
+}
+
+.title h1{
     font-size: 3rem;
 }
 
-.icons{
+.corpo-projetos{
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.fa-github{
-color: black;
+.corpo-projetos .projeto img{
+    width: 95%;
+    height: 70%;
 }
 
-.fa-linkedin{
-    color: blue;
+.corpo-projetos .projeto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    width: 55rem;
+    height: 32rem; 
+    border-radius: .5rem; 
+    margin: 2rem;
+    transition: .5s;
+    background: rgb(44, 44, 44);
 }
 
-.fa-envelope{
-    color: orange;
+.corpo-projetos a{
+    font-size: 2.5rem;
+    color: var(---blueWords);
+    text-decoration: none;
+    background: var(---grayImg);
+    border-radius: 2rem;
+    padding-inline: 2rem;
 }
 
+#techs{
+    display:grid;
+    place-items: center;
+}
+
+
+#techs h1{
+    font-size: 3rem;
+}
+
+#techs h2{
+    font-size: 2rem;
+}
+
+#techs .every-techs{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.every-techs div{
+    margin-inline: 3rem;
+}
+
+#techs .languages{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#techs div{
+    margin-block: 3rem;
+
+}
+
+.languages img{
+    width: 7rem;
+}
+
+footer{
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    background: green;
+    height: 13rem;
+}
+
+footer .icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+footer a{
+    font-size: 3rem;
+    margin: 1rem;
+    color: var(---blueIcon);
+    transition: .3s;
+}
+
+footer a:hover{
+    color: var(---blueWords);
+}
+
+#returnToTop{
+    position: fixed;
+    right: 2rem;
+    bottom: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(---blueIcon);
+    color: black;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    text-decoration: none;
+    visibility: hidden;/*No começo, ele ficará invisível. Após adicionar
+    o .show nele(através do JS, ficará visível novamente)*/
+    transform: translateY(100%);
+    transition: .5s;
+
+}
+
+
+#returnToTop.show{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0%);
+}
 
 
