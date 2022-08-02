@@ -5,4 +5,4 @@
 # My portfolio on working / Meu portfolio em funcionamento:
 # Link: https://victorriz.github.io/VictooorPortfolio/
 
-# Working in progress... / Em reformulação
+# Final development... / Em fase final de desenvolvimento...
