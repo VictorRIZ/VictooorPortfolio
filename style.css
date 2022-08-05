@@ -43,19 +43,26 @@ header .logo{
     text-decoration: none;
 }
 
-header .menu{
+#navigation .menu{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    list-style: none;
+    text-decoration: none;
     background: green;
     width: 100vw;
     height: 5vh;
 }
 
-.menu li{
-    font-size: 1.8rem;
+#navigation .menu li {
+    list-style: none;
 }
+
+#navigation .menu li a{
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: var(--blueIcon);
+}
+
 
 #apresentacao{
     height: 90%;
@@ -98,7 +105,7 @@ header .menu{
 }
 
 #apresentacao .texto-apresentacao a{
-    margin-left: 21rem;
+    margin-left: 23rem;
     text-decoration: none;
     font-size: 2.5rem;
     color: var(---blueIcon);
@@ -271,4 +278,46 @@ footer a:hover{
     transform: translateY(0%);
 }
 
+/*Responsividade*/
+
+@media (max-width: 920px){
+
+#about-me{
+    display: grid;
+    place-items: center;
+}
+
+.imagem-sobre img{
+    width: 40vw;
+    margin-top: 1rem;
+}
+
+
+#techs .every-techs{
+    display:grid;
+    place-items: center;
+}
+
+.every-techs div{
+    margin-inline: 0rem;
+}
+
+#apresentacao .texto-apresentacao{
+    margin-left: -7rem;
+}
+
+#apresentacao .texto-apresentacao h2{
+    font-size: 2.5rem;
+}
+
+#apresentacao .texto-apresentacao p{
+    font-size: 2rem;
+}
+
+#apresentacao .texto-apresentacao a{
+    margin-left: 6rem;
+    text-decoration: none;
+    font-size: 2rem;
+}
+}
 
