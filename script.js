@@ -27,3 +27,16 @@ function showReturnToTopOnScroll(){
             returnToTop.classList.remove('show')
         }
 }
+
+//Smooth
+
+ScrollReveal({
+    origin: 'top',
+    distance: '3rem',
+    duration: 700,
+}).reveal(`#navigation,
+#apresentacao,
+#about-me,
+#projetos .title,
+#projetos .servicos,
+#contact,`);
