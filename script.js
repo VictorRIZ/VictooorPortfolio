@@ -1,23 +1,14 @@
-alert("For a better experience, use 80% to resolution. / Para uma melhor experiência, utilize a resolução em 80%.");
+//alert("For a better experience, use 80% to resolution. / Para uma melhor experiência, utilize a resolução em 80%.");
 
 window.addEventListener('scroll', OnScroll)
 
 OnScroll()
 //Function destinada a tudo relacionado ao scroll da página
 function OnScroll(){
-    showNavOnScroll()
     showReturnToTopOnScroll()
 }
 
-function showNavOnScroll(){
-    var navigation = document.getElementById("navigation");
-    if (scrollY > 30) {//Se for maior que 0, ative.
-        navigation.classList.add('scroll')//Adicionar classe via JS
-        //Lembrando que já estilizei essa classe no CSS
-        } else { //senão, remova.
-            navigation.classList.remove('scroll')
-        }
-}
+
 
 function showReturnToTopOnScroll(){
     var returnToTop = document.getElementById("returnToTop");

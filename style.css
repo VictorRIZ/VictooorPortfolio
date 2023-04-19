@@ -73,36 +73,22 @@ header .logo{
     background-position: center;*/
 }
 
-#apresentacao .imagem-apresentacao{
-    position: relative;
-    height: 100%;
-    width: 100%;
-}
-
-.imagem-apresentacao img{
-    width: 100%;
-    height: 100%;
-    filter: blur(3px);
-}
 
 #apresentacao .texto-apresentacao{
-    position: absolute;
-    left: 37%; 
-    margin-left: -12rem; 
-    top: 50%; 
-    margin-top: -7.5rem;
-    width:50%; 
-    height: 50%;
+    display: grid;
+    place-items: center;
+    margin-inline:30%;
+    margin-top: 5%;
 }
 
 #apresentacao .texto-apresentacao h2{
     font-size: 5rem;
-    color: black;
+    color: white;
 }
 
 #apresentacao .texto-apresentacao p{
     font-size: 3rem;
-    color: black;
+    color: white;
 }
 
 #apresentacao .texto-apresentacao a{
@@ -121,178 +107,21 @@ header .logo{
     transition: .5s;
 }
 
-#about-me{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 1rem;
-}
-
-#about-me .texto-sobre{
-    width: 60%;
-}
-
-.texto-sobre p{
-    font-size: 2.5rem;
-}
-
-.imagem-sobre img{
-    width: 20vw;
-}
-
-#projetos{
-    display: grid;
-    place-items: center;
-    margin-top: 5rem;
-}
-
-.title{
-    margin-block: 4rem;
-}
-
-.title h1{
-    font-size: 3rem;
-}
-
-.corpo-projetos{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.corpo-projetos .projeto img{
-    width: 95%;
-    height: 70%;
-}
-
-.corpo-projetos .projeto{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    position: relative;
-    width: 55rem;
-    height: 32rem; 
-    border-radius: .5rem; 
-    margin: 2rem;
-    transition: .5s;
-    background: rgb(44, 44, 44);
-}
-
-.corpo-projetos a{
-    font-size: 2.5rem;
-    color: var(---blueWords);
-    text-decoration: none;
-    background: var(---grayImg);
-    border-radius: 2rem;
-    padding-inline: 2rem;
-}
-
-.servicos{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.servicos div {
-    display: grid;
-    place-items: center;
-    width: 35rem;
-    height: 22rem; 
-    border-radius: .5rem; 
-    margin: 2rem;
-    background: rgb(44, 44, 44);
-}
-
-.servicos div:hover{
-    border: 1px solid var(---blueIcon);
-}
-
-.servicos div h2{
-    font-size: 2rem;
-}
-
-.servicos i{
-    font-size: 3rem;
-    color: var(---blueIcon);
-}
-
-.servicos .tipos{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.servicos .tipos i{
-    margin-left: 1rem;
-}
-
-#techs{
-    display:grid;
-    place-items: center;
-}
-
-
-#techs h1{
-    font-size: 3rem;
-}
-
-#techs h2{
-    font-size: 2rem;
-}
-
-#techs .every-techs{
-    display: flex;
-    align-items: center;
-    justify-content:space-around;
-}
-
-.every-techs div{
-    margin-inline: 3rem;
-}
-
-#techs .languages{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#techs div{
-    margin-block: 3rem;
-
-}
-
-.languages img{
-    width: 7rem;
-}
-
-footer{
-    display: grid;
-    place-items: center;
-    width: 100vw;
-    background: green;
-    height: 13rem;
-}
-
-footer .icons{
+.icons .social-medias{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 2rem;
 }
 
-footer a{
-    font-size: 3rem;
+.icons a{
+    font-size: 6rem;
     margin: 1rem;
     color: var(---blueIcon);
     transition: .3s;
 }
 
-footer a:hover{
+.icons a:hover{
     color: var(---blueWords);
 }
 
@@ -325,53 +154,11 @@ footer a:hover{
 }
 
 /*Responsividade*/
-
 @media (max-width: 920px){
-
-#about-me{
-    display: grid;
-    place-items: center;
-}
-
-.imagem-sobre img{
-    width: 40vw;
-    margin-top: 1rem;
-}
-
-
-#techs .every-techs{
-    display:grid;
-    place-items: center;
-}
-
-.every-techs div{
-    margin-inline: 0rem;
-}
-
 #apresentacao .texto-apresentacao{
-    margin-left: -7rem;
+    margin-inline:10%;
+    margin-top: 5%;
+}       
 }
 
-#apresentacao .texto-apresentacao h2{
-    font-size: 2.5rem;
-}
-
-#apresentacao .texto-apresentacao p{
-    font-size: 2rem;
-}
-
-#apresentacao .texto-apresentacao a{
-    margin-left: 6rem;
-    text-decoration: none;
-    font-size: 2rem;
-}
-
-.corpo-projetos .projeto{
-    width: 41rem;
-}
-
-.corpo-projetos a{
-    font-size: 2.3rem;
-}
-}
 
