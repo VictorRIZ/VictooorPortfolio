@@ -3,6 +3,7 @@
 <img src="images/portfolio.jpg">
 
 # My portfolio on working / Meu portfolio em funcionamento:
-# Link: https://victorriz.github.io/VictooorPortfolio/
+<h2> Link: https://victorriz.github.io/VictooorPortfolio/ </h2>
 
-# Final development... / Em fase final de desenvolvimento...
+<h2> Final development... / Em fase final de desenvolvimento... 
+</h2>
