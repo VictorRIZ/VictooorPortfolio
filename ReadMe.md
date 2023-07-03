@@ -1,6 +1,6 @@
 # Welcome to my Portfolio! / Bem vindo ao meu Portfolio!
 
-<img src="images/Portfolio.png">
+<img src="images/Portfolio.PNG">
 
 # My portfolio on working / Meu portfolio em funcionamento:
 <h2> Link: https://victorriz.github.io/VictooorPortfolio/ </h2>
