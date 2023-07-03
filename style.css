@@ -5,125 +5,257 @@
     box-sizing: border-box;
 }
 html{
-    --menu-color: #2348b7;
-    ---blueIcon: #c0c0ff;
+    ---menu-color: #2348b7;
+    ---blueIcon: #7474d0;
     ---blueWords: #001c69;
     ---grayImg: #9c9c9c;
-    ---colorBody: #121212;
-    ---colorLyrics: #e8e8e8;
+    ---normalColorBody: #c7cffc;
+    ---colorLyrics: #121040;
+    ---colorBodySecundary: #000000;
+    ---secundaryColorLyrics: #61619f;
+    ---box-color: #5858de;
     font-size: 62.5%;
     scroll-behavior: smooth;
     color: var(---colorLyrics);
 }
 
+/*Estilização da barra de scroll*/
+
+body::-webkit-scrollbar {
+    width: 15px;
+}
+  
+body {
+    z-index: 0;
+    scrollbar-width: thin;
+    scrollbar-color: var(---colorLyrics) var(---menu-color);
+}
+
+body::-webkit-scrollbar-track {
+    background: var(---menu-color);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(---colorLyrics) ;
+    border-radius: 6px;
+    border: 3px solid var(---menu-color);
+/}
+  
+
 body{
-    background: var(---colorBody);
+    display: grid;
+    place-items: center;
+    background: var(---normalColorBody);
+    font-size: 2rem;
 }
 
 header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: black;
-    width: 100vw;
-    height: 15vh;
-    color: white;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    padding-block: 2rem;
+    background: var(---menu-color);
+    z-index: 1;
 }
 
-header .logo{
+#navigation{
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 10vh;
+    justify-content: space-between;
 }
 
-.logo .name-logo{
-    color: var(---blueIcon);
-    text-transform: uppercase;
+#navigation a{
+    text-decoration: none;
+    color: var(---colorLyrics);
+}
+
+#navigation .name-logo{
+    margin-inline: 1rem;
     font-size: 4rem;
-    text-decoration: none;
 }
 
-#navigation .menu{
+#navigation ul{
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    text-decoration: none;
-    background: var(--menu-color);
-    width: 100vw;
-    height: 5vh;
-}
-
-#navigation .menu li {
+    justify-content: center;
     list-style: none;
+
 }
 
-#navigation .menu li a{
-    text-decoration: none;
-    font-size: 1.8rem;
-    color: var(--blueIcon);
+#navigation ul li{
+    font-size: 2rem;
+    margin-inline: 1rem;
 }
 
+/*Apresentaçao*/
 
 #apresentacao{
-    height: 90%;
-    width: 100%/*
-    background-image: url(images/apresentacao.png);
-    background-repeat: no-repeat;
-    background-position: center;*/
+    margin-top: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10%;
 }
-
 
 #apresentacao .texto-apresentacao{
     display: grid;
     place-items: center;
-    margin-inline:30%;
-    margin-top: 5%;
+    margin-inline: 3%;
 }
 
-#apresentacao .texto-apresentacao h2{
-    font-size: 5rem;
-    color: white;
+#apresentacao .imagem-apresentacao{
+    margin-inline: 1%;
 }
 
-#apresentacao .texto-apresentacao p{
-    font-size: 3rem;
-    color: white;
+.imagem-apresentacao img{
+    width: 90%;
 }
 
-#apresentacao .texto-apresentacao a{
-    margin-left: 23rem;
-    text-decoration: none;
-    font-size: 2.5rem;
-    color: var(---blueIcon);
-    border: 2px solid var(---blueIcon);
-    border-radius: 2rem;
-    transition: .5s;
+.texto-apresentacao i{
+    color: var(---blueWords);
+    font-size: 4rem;
+    margin-inline: 1rem;
 }
 
-#apresentacao .texto-apresentacao a:hover{
-    color: black;
-    background: var(---blueIcon);
-    transition: .5s;
+/*Sobre mim*/
+
+#about{
+    display: grid;
+    place-items: center;
 }
 
-.icons .social-medias{
+.nav.about{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 2rem;
 }
 
-.icons a{
-    font-size: 6rem;
-    margin: 1rem;
-    color: var(---blueIcon);
-    transition: .3s;
+#about .nav.about{
+    grid-template-columns: 30.5rem 1fr;
+    grid-template-areas: 'A B';
 }
 
-.icons a:hover{
-    color: var(---blueWords);
+#about .about-me-text{
+    grid-area: A;
+    text-align: left;
 }
+
+#about .imagem-face{
+    grid-area: B;
+    padding-inline: 1%;
+}
+
+.imagem-face img{
+    width: 300px;
+}
+/*Formação/Estudos*/
+
+#formacao{
+    display: grid;
+    place-items: center;
+    margin-block: 8%;   
+}
+
+.formacao-detalhes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2%;
+}
+
+.formacao-detalhes li{
+    list-style: none;
+}
+
+#formacao .formacao-detalhes{
+    grid-template-columns: 30.5rem 1fr;
+}
+
+.formacao-detalhes nav{
+    width: 45vw;
+}
+
+.padronizacao{
+    width: 90%;
+    height: 25rem;
+}
+
+/*Principais projetos*/
+
+#projects{
+    display: grid;
+    place-items: center;
+}
+
+#projects .descricao-projetos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.descricao-projetos .projeto{
+    display: grid;
+    place-items: center;
+    position: relative;
+    width: 51rem;
+    height: 32rem; 
+    background: var(---box-color);
+    border-radius: .5rem; 
+    margin: 2rem;
+    transition: .5s;
+}
+
+.projeto img{
+    width: 70%;
+}
+
+.projeto .img-it{
+    width: 52%;
+    height: 99%;
+}
+
+.projeto a{
+    padding: 1rem;
+    border-radius: 1rem;
+    background: var(---colorBodySecundary);
+    text-decoration: none;
+    color: var(---secundaryColorLyrics);
+}
+
+/*Experiências*/
+
+#jobs{
+    display: grid;
+    place-items: center;
+    margin-block: 8%;   
+}
+
+#jobs .jobs-detalhes{
+    grid-template-columns: 30.5rem 1fr;
+}
+
+.jobs-detalhes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2%;
+}
+
+.jobs-detalhes nav{
+    width: 45vw;
+}
+
+.jobs-detalhes li{
+    list-style: none;
+}
+
+.padronizacao.audience{
+    width: 70%;
+    height: 25rem;
+}
+
+/*Botão de voltar ao topo*/
 
 #returnToTop{
     position: fixed;
@@ -132,8 +264,8 @@ header .logo{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(---blueIcon);
-    color: black;
+    background: var(---colorLyrics);
+    color: #fff;
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
@@ -153,12 +285,17 @@ header .logo{
     transform: translateY(0%);
 }
 
-/*Responsividade*/
-@media (max-width: 920px){
-#apresentacao .texto-apresentacao{
-    margin-inline:10%;
-    margin-top: 5%;
-}       
+/*Footer*/
+
+.bottom{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    background: var(---menu-color);
+    color: black;
 }
 
-
+.bottom a{
+    text-decoration: none;
+    color: black;
+}

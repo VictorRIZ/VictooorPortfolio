@@ -1,0 +1,6 @@
+SetEnvIf Referer 127\.0\.0\.1\:5500 localreferer
+<FilesMatch \.(jpg|jpeg|png|gif)$>
+Order deny,allow
+Deny from allow
+Alow from env=localreferer
+</FilesMatch>

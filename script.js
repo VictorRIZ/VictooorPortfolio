@@ -5,10 +5,20 @@ window.addEventListener('scroll', OnScroll)
 OnScroll()
 //Function destinada a tudo relacionado ao scroll da página
 function OnScroll(){
+    showNavOnScroll()
     showReturnToTopOnScroll()
 }
 
 
+function showNavOnScroll(){
+    var navigation = document.getElementById("navigation");
+    if (scrollY > 30) {//Se for maior que 0, ative.
+        navigation.classList.add('scroll')//Adicionar classe via JS
+        //Lembrando que já estilizei essa classe no CSS
+        } else { //senão, remova.
+            navigation.classList.remove('scroll')
+        }
+}
 
 function showReturnToTopOnScroll(){
     var returnToTop = document.getElementById("returnToTop");
@@ -27,7 +37,7 @@ ScrollReveal({
     duration: 700,
 }).reveal(`#navigation,
 #apresentacao,
-#about-me,
-#projetos .title,
-#projetos .servicos,
-#contact,`);
+#about,
+#formacao .formacao-detalhes,
+#projetos .descricao-projetos,
+#jobs .jobs-detalhes,`);
