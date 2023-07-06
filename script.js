@@ -1,4 +1,6 @@
-//alert("For a better experience, use 80% to resolution. / Para uma melhor experiência, utilize a resolução em 80%.");
+alert("For a better experience, use 80% to resolution. / Para uma melhor experiência, utilize a resolução em 80%.");
+
+window.addEventListener('scroll', OnScroll)
 
 window.addEventListener('scroll', OnScroll)
 
@@ -8,7 +10,6 @@ function OnScroll(){
     showNavOnScroll()
     showReturnToTopOnScroll()
 }
-
 
 function showNavOnScroll(){
     var navigation = document.getElementById("navigation");
